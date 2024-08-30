@@ -1,6 +1,6 @@
 import userRepository from "../repositories/user.repository";
 import { IRequestCreateUser, IUser, ILoginUser } from "../types/user.types";
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 const userService = {
   getUserById: async (id: string) => {
